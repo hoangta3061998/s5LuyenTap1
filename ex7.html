@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkVInArray(arr) {
+        var x = prompt("Nhap so V :");
+        var flag;
+        var i;
+        for (i = 0; i < arr.length; i++) {
+            if (x == arr[i]) {
+                flag = false;
+                break;
+
+            } else {
+                flag = true;
+            }
+        }
+        if(!flag) {
+            arr.splice(i , 1);
+            arr.push(0);
+            document.write(arr);
+        }
+
+    }
+    let arr1 = [1 , 2 , 3 , 4 , 5];
+    checkVInArray(arr1);
+</script>
+</body>
+</html>

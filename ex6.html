@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkVInArray(arr) {
+        var x = prompt("Nhap so V :");
+        var flag;
+        for (let i = 0; i < arr.length; i++) {
+            if (x == arr[i]) {
+                flag=true;
+                break;
+
+            } else {
+                flag= false;
+            }
+        }
+        if (!flag) {
+            alert("V is not in array");
+        } else {
+            alert("V is in array");
+        }
+
+    }
+
+    let arr1 = [1, 2, 3, 4, 5];
+    checkVInArray(arr1);
+
+</script>
+</body>
+</html>

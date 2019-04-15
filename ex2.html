@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function biggestNumber(arr) {
+        let max = arr[0];
+        var i;
+        for (i = 0 ; i < arr.length ; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+        document.write("So lon nhat la " + max + " o vi tri so " + i);
+    }
+    let arr1 = [1 , 2 , 4 , 5 , 3 , 6 , 9];
+    biggestNumber(arr1);
+</script>
+</body>
+</html>

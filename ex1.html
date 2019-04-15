@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="1"></p>
+<p id="2"></p>
+<script>
+    function numberBiggerThan10(arr) {
+        let count = 0;
+        for (let i = 0 ; i < arr.length ; i++) {
+            if (arr[i] >= 10) {
+                count++;
+                document.getElementById("2").innerHTML += arr[i] + " , ";
+            }
+        }
+        document.getElementById("1").innerHTML= "Mang nay co " + count + " so lon hon hoac bang 10 la : "
+    }
+    let arr1 = [1 , 10 , 19 , 2 , 40 , 5 , 68];
+    numberBiggerThan10(arr1);
+
+</script>
+</body>
+</html>
